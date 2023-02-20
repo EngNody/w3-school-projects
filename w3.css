@@ -1,0 +1,2221 @@
+
+:root{
+ --ourcolor1: rgb(157, 4, 4);
+ --ourcolor2: white;
+
+}
+
+.favbackgcolor{
+  background-color: var(--ourcolor1);
+  color: var(--ourcolor2);
+width: 30%;
+margin:50px auto;
+text-align: center;
+font-size: 30px;
+border-radius: 10px;
+padding: 5px 0;
+font-weight: bold;
+
+}
+
+/* // ==============================================================
+// ==============================================================
+// ===================== Fixed Sidebar ==========================
+// ==============================================================
+// ============================================================== */
+body{
+  position: relative;
+}
+/* The sidebar menu */
+.sidenavfixed {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+ width: 0;
+   /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  /* overflow-x: hidden;  */
+  /* Disable horizontal scroll */
+  padding-top: 20px;
+  overflow: auto;
+  transition: all 0.3s;
+}
+
+.openfixed{
+  /* border: 7px solid red; */
+  width: 40px;
+  font-size:30px;
+  cursor:pointer;
+  color: white;
+  position: fixed;
+top: 5px;
+left:5px;
+font-size: 30px;
+background-color: #726f6f;
+border-radius: 5px;
+text-align: center;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenavfixed .closebtnfixed {
+  position: fixed;
+  top: 0;
+  left:120px;
+  font-size: 50px;
+  font-weight: bold;
+  margin-left: 50px;
+  display: none;
+}
+/* .sidenav:hover{width:200px;} */
+
+/* The navigation menu links */
+.sidenavfixed a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenavfixed a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.mainfixed {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenavfixed {padding-top: 15px;}
+  .sidenavfixed a {font-size: 18px;}
+}
+
+/* // ==============================================================
+// ==============================================================
+// ====================== Side Navigation========================
+// ==============================================================
+// ============================================================== */
+
+/* The side navigation menu */
+/* .sidenav {
+  height: 100%; 
+  width: 0;
+  position:fixed;
+  z-index:1;
+  top: 0;
+  left: 0;
+  background-color: #111; 
+  overflow-x: hidden;
+  padding-top: 60px; 
+  transition: 0.5s;
+} */
+
+/* The navigation menu links */
+/* .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+} */
+
+/* When you mouse over the navigation links, change their color */
+/* .sidenav a:hover {
+  color: #f1f1f1;
+} */
+
+/* Position and style the close button (top right corner) */
+/* .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+} */
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+/* #main {
+  transition: margin-left .5s;
+  padding: 20px;
+} */
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+/* @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} */
+/* // ==============================================================
+// ==============================================================
+// ======================  icon bar  ===========================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* body {margin:0} */
+
+/* // ===========================================================
+// ========================= Horizontal =========================  
+// ==============================================================  */
+
+/* .icon-bar {
+  width: 90px;
+  background-color: #555;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+} */
+
+/* // ============================================================  
+// ===================== Vertical ================================
+// ===============================================================  */
+
+/* .icon-bar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+} */
+
+
+/* ================================================================= */
+
+/* .icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+ */
+
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ======================  menu icon  ===========================
+// ==============================================================
+// ============================================================== */
+
+
+/* .container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+} */
+
+
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ======================  accordion  ===========================
+// ==============================================================
+// ============================================================== */
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+/* .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+} */
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* .active, .accordion:hover {
+  background-color: #ccc;
+} */
+
+/* Style the accordion panel. Note: hidden by default ======= .panel {padding: 0 18px;background-color: white;display: none;overflow: hidden;}  ========================dont use  */
+
+/* Animated Accordion (Slide Down) */
+/* .panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  height: 200px;
+} */
+
+/* Add Icons */
+
+ /* .accordion:after { */
+  /* Unicode character for "plus" sign (+)  */
+  /* content: '\02795';
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+} */
+
+/* .active:after { */
+   /* Unicode character for "minus" sign (-) */
+  /* content: "\2796";
+} */
+
+
+/* // ==============================================================
+// ==============================================================
+// ======================toggle Tabs===========================
+// ==============================================================
+// ============================================================== */
+
+
+
+
+/* Style the tab */
+/* .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+} */
+
+/* Style the buttons that are used to open the tab content */
+/* .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+} */
+
+/* Change background color of buttons on hover */
+/* .tab button:hover {
+  background-color: #ddd;
+} */
+
+/* Create an active/current tablink class */
+/* .tab button.active {
+  background-color: #ccc;
+} */
+
+
+/* Style the tab content */
+/* .tabcontent { */
+  /* display: none; */
+  /* padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.Paris,.Tokyo{
+  display: none;
+} */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ======================Vertical Tabs===========================
+// ==============================================================
+// ============================================================== */
+
+
+
+
+/* * {box-sizing: border-box} */
+
+/* Style the tab */
+/* .tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+} */
+
+/* Style the buttons that are used to open the tab content */
+/* .tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+} */
+
+/* Change background color of buttons on hover */
+/* .tab button:hover {
+  background-color: #ddd;
+} */
+
+/* Create an active/current "tab button" class */
+/* .tab button.active {
+  background-color: #ccc;
+} */
+
+/* Style the tab content */
+/* .tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+} */
+
+/* #Paris{
+  display: none;
+}
+#Tokyo{
+  display: none;
+}  */
+
+
+
+
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ======================== Tab Headers =========================
+// ==============================================================
+// ============================================================== */
+
+
+/* Style the tab buttons */
+/* .tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+} */
+
+/* Change background color of buttons on hover */
+/* .tablink:hover {
+  background-color: #777;
+} */
+
+/* Set default styles for tab content */
+/* .tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+} */
+
+/* Style each tab content individually */
+/* #London {background-color:red;}
+#Paris {background-color:rgb(255, 0, 225);}
+#Tokyo {background-color:blue;}
+#Oslo {background-color:orange;}
+#egypt{background-color: yellow ;color: black;} */
+
+
+/* // ==============================================================
+// ==============================================================
+// ========================= Full Page Tabs ======================
+// ==============================================================
+// ============================================================== */
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+/* body, html {
+  height: 90%;
+  margin: 0;
+  font-family: Arial;
+} */
+
+/* Style tab links */
+/* .tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+} */
+
+/* Style the tab content (and add height:100% for full page content) */
+/* .tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: red;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;} */
+
+/* // ==============================================================
+// ==============================================================
+// ========================== hover taps ========================
+// ==============================================================
+// ============================================================== */
+
+
+/* .hovertaps{
+  display: flex;
+} */
+
+/* Style the tab */
+/* .tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+} */
+
+/* Style the buttons that are used to open the tab content */
+/* .tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+} */
+
+/* Change background color of buttons on hover */
+/* .tab button:hover {
+  background-color: #ddd;
+} */
+
+/* Create an active/current "tab button" class */
+/* .tab button.active {
+  background-color: #ccc;
+} */
+
+/* Style the tab content */
+/* .tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+  display: none;
+} */
+
+
+/* // ============================================================
+// ==============================================================
+// =========================== Top Navigation =======================
+// ==============================================================
+// ============================================================== */
+
+/* Add a black background color to the top navigation */
+/* .topnav {
+  background-color: #333;
+  overflow: hidden;
+} */
+
+/* Style the links inside the navigation bar */
+/* .topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+} */
+
+/* Change the color of links on hover */
+/* .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+} */
+
+/* Add a color to the active/current link */
+/* .topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+} */
+
+/* // ==============================================================
+// ==============================================================
+// ================== Responsive Navigation Bar =================
+// ==============================================================
+// ============================================================== */
+
+/* Add a black background color to the top navigation */
+/* .topnav {
+  background-color: #333;
+  overflow: hidden;
+} */
+
+/* Style the links inside the navigation bar */
+/* .topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+} */
+
+/* Change the color of links on hover */
+/* .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+} */
+
+/* Add an active class to highlight the current page */
+/* .topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+} */
+
+/* Hide the link that should open and close the topnav on small screens */
+/* .topnav .icon {
+  display: none;
+} */
+
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/* @media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+} */
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+/* @media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+} */
+
+
+/* // ==============================================================
+// ==============================================================
+// ==================== Split Navigation ========================
+// ==============================================================
+// ============================================================== */
+
+/* Create a top navigation bar with a black background color  */
+/* .topnav {
+  background-color: #333;
+  overflow: hidden;
+} */
+
+/* Style the links inside the navigation bar */
+/* .topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+} */
+
+/* Change the color of links on hover */
+/* .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+} */
+
+/* Create a right-aligned (split) link inside the navigation bar */
+/* .topnav a.split {
+  float: right;
+  background-color: #04AA6D;
+  color: white;
+} */
+
+/* // ==============================================================
+// ==============================================================
+// ==================== Navbar with Icons =======================
+// ==============================================================
+// ============================================================== */
+
+/* Style the navigation bar */
+/* .navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+} */
+
+/* Navbar links */
+/* .navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+} */
+
+/* Navbar links on mouse-over */
+/* .navbar a:hover {
+  background-color: #000;
+} */
+
+/* Current/active navbar link */
+/* .active {
+  background-color: #04AA6D;
+} */
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+/* @media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+} */
+
+
+/* // ==============================================================
+// ==============================================================
+// ==================== Search/Filter Menu ======================
+// ==============================================================
+// ============================================================== */
+
+/* Style the search box */
+/* #mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+} */
+
+/* Style the navigation menu */
+/* #myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+} */
+
+/* Style the navigation links */
+/* #myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+} */
+
+/* 
+<!-- ====================================================================== -->
+<!-- ==================another search list================================= -->
+<!-- ======================================================================= --> */
+
+/* body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+} */
+
+/* Create a column layout with Flexbox */
+/* .row {
+  display: flex;
+} */
+
+/* Left column (menu) */
+/* .left {
+  flex: 35%;
+  padding: 15px 0;
+} */
+/* 
+.left h2 {
+  padding-left: 8px;
+} */
+
+/* Right column (page content) */
+/* .right {
+  flex: 65%;
+  padding: 15px;
+} */
+
+/* Style the search box */
+/* #mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+} */
+
+/* Style the navigation menu inside the left column */
+/* #myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+} */
+
+/* // ==============================================================
+// ==============================================================
+// ======================= Search Bar ===========================
+// ==============================================================
+// ============================================================== */
+
+/* * {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+} */
+
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ======================= Responsive Sidebar ===================
+// ==============================================================
+// ============================================================== */
+/* .sidebarflex{
+  display: flex;
+  margin:auto;
+  width: 70%;
+} */
+/* The side navigation menu */
+/* .sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  height: 100%;
+  overflow: auto;
+  font-size: 25px;
+} */
+
+/* Sidebar links */
+/* .sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+} */
+
+/* Active/current link */
+/* .sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+} */
+
+/* Links on mouse-over */
+/* .sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+} */
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+/* div.content {
+  width: 50%;
+  padding: 1px 16px;
+  font-size: 20px;
+line-height: 1.5;
+} */
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+/* @media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+} */
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+/* @media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+} */
+
+/* // ==============================================================
+// ==============================================================
+// =============== Full screen Overlay Navigation ===============
+// ==============================================================
+// ============================================================== */
+
+/* The Overlay (background) */
+/* .overlay { */
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+
+  /* // Slide down from the top */
+  /* height: 100%; */
+    /* width: 0; */
+
+    /* // Slide down from the top */
+/* height: 0; */
+  /* width: 100%; */
+
+  /* Open the menu without animation*/
+/* display: none;
+width: 100%;
+height: 100%;  */
+
+  /* position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden; 
+  transition: 0.5s; */
+/* } */
+
+/* Position the content inside the overlay */
+/* .overlay-content {
+  position: relative;
+  top: 25%; 
+  width: 100%; 
+  text-align: center;
+  margin-top: 30px; 
+} */
+
+/* The navigation links inside the overlay */
+/* .overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; 
+  transition: 0.3s; 
+} */
+
+/* When you mouse over the navigation links, change their color */
+/* .overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+} */
+
+/* Position the close button (top right corner) */
+/* .overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+} */
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+/* @media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+} */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==================== - Off-Canvas Menu =======================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* The side navigation menu */
+/* .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: #111; 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s;
+} */
+
+/* The navigation menu links */
+/* .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+} */
+
+/* When you mouse over the navigation links, change their color */
+/* .sidenav a:hover {
+  color: #f1f1f1;
+} */
+
+/* Position and style the close button (top right corner) */
+/* .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+} */
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+/* #main {
+  transition: margin-left .5s;
+  padding: 20px;
+} */
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+/* @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} */
+
+
+/* // ==============================================================
+// ==============================================================
+// ==================== Sidebar with Icons ======================
+// ==============================================================
+// ============================================================== */
+
+/* #mySidenav{
+  position: relative;
+  border: 2px solid red;
+  width: 500px;
+  height: 300px;
+  text-align: center;
+}
+#mySidenav a {
+  position: absolute;
+  left: -80px; 
+  transition: 0.3s;
+  padding: 15px; 
+  width: 100px; 
+  height: 20px;
+  text-decoration: none; 
+  font-size: 20px; 
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 20px;
+  background-color: #04AA6D;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 200px;
+  background-color: #555 ;
+} */
+
+
+/* // ==============================================================
+// ==============================================================
+// ================= Side Navigation Buttons ====================
+// ==============================================================
+// ============================================================== */
+
+/* Style the sidebar - fixed full height */
+/* .sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+} */
+
+/* Style sidebar links */
+/* .sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+} */
+
+/* Style links on mouse-over */
+/* .sidebar a:hover {
+  color: #f1f1f1;
+} */
+
+/* Style the main content */
+/* .main { */
+  /* margin-left: 160px;  */
+  /* Same as the width of the sidenav */
+  /* padding: 0px 10px; */
+/* } */
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+/* @media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+} */
+
+
+/* // ==============================================================
+// ==============================================================
+// ================== Horizontal Scroll Menu ====================
+// ==============================================================
+// ============================================================== */
+
+/* div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  width: 40%;
+  margin: auto;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+} */
+
+/* // ==============================================================
+// ==============================================================
+// ====================== Vertical Menu =========================
+// ==============================================================
+// ============================================================== */
+
+/* .vertical-menu {
+  width: 200px; 
+}
+
+.vertical-menu a {
+  background-color: #eee; 
+  color: black;
+  display: block;
+  padding: 12px; 
+  text-decoration: none; 
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc; 
+}
+
+.vertical-menu a.active {
+  background-color: #04AA6D;
+  color: white;
+} */
+
+/* Vertical Menu scroll */
+/* .vertical-menu {
+  width: 200px;
+  height: 150px;
+  overflow-y: auto;
+} */
+
+/* // ==============================================================
+// ==============================================================
+// =================== Bottom Navigation ========================
+// ==============================================================
+// ============================================================== */
+
+/* Place the navbar at the bottom of the page, and make it stick */
+#Bottom-Navigation .navbar{
+  background-color: #333;
+  overflow: auto;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+#Bottom-Navigation .navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+#Bottom-Navigation .navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+#Bottom-Navigation .navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* // ==============================================================
+// ==============================================================
+// =============== Responsive Bottom Navbar =====================
+// ==============================================================
+// ============================================================== */
+
+
+/* Place the navbar at the bottom of the page, and make it stick */
+#Responsive-Bottom-Navbar .navbarBottomNavbar {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+#Responsive-Bottom-Navbar .navbarBottomNavbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+#Responsive-Bottom-Navbar .navbarBottomNavbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a green background color to the active link */
+#Responsive-Bottom-Navbar .navbarBottomNavbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the navbar on small screens */
+#Responsive-Bottom-Navbar .navbarBottomNavbar .icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
+@media screen and (max-width: 600px) {
+  #Responsive-Bottom-Navbar .navbarBottomNavbar a:not(:first-child) {display: none;}
+  #Responsive-Bottom-Navbar .navbarBottomNavbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  #Responsive-Bottom-Navbar .navbarBottomNavbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  #Responsive-Bottom-Navbar .navbarBottomNavbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* // ==============================================================
+// ==============================================================
+// ================= Bottom Border Nav Links ====================
+// ==============================================================
+// ============================================================== */
+
+/* Add a black background color to the top navigation */
+#Bottom-Border-Nav-Links .topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+#Bottom-Border-Nav-Links .topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+
+#Bottom-Border-Nav-Links .topnav a:hover {
+  border-bottom: 3px solid red;
+}
+
+#Bottom-Border-Nav-Links .topnav a.active {
+  border-bottom: 3px solid red;
+}
+
+
+/* // ==============================================================
+// ==============================================================
+// ================ Right Aligned Menu Buttons ==================
+// ==============================================================
+// ============================================================== */
+
+/* Add a black background color to the top navigation */
+#Right-Aligned-Menu-Buttons .topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+#Right-Aligned-Menu-Buttons .topnav a {
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+/* Change the color of links on hover */
+#Right-Aligned-Menu-Buttons .topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+/* Add a color to the active/current link */
+#Right-Aligned-Menu-Buttons .topnav a.active {
+background-color: #04AA6D;
+color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+#Right-Aligned-Menu-Buttons .topnav-right {
+float: right;
+}
+
+/* // ==============================================================
+// ==============================================================
+// ================ Centered Top Navigation =====================
+// ==============================================================
+// ============================================================== */
+
+/* Add a black background color to the top navigation */
+#Centered-Top-Navigation .topnav {
+  position: relative;
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+#Centered-Top-Navigation .topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+#Centered-Top-Navigation .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+#Centered-Top-Navigation .topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Centered section inside the top navigation */
+#Centered-Top-Navigation .topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Right-aligned section inside the top navigation */
+#Centered-Top-Navigation .topnav-right {
+  float: right;
+}
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+  #Centered-Top-Navigation .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+
+  #Centered-Top-Navigation .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+
+/* // ==============================================================
+// ==============================================================
+// ============== Equal Width Navbar Links ======================
+// ==============================================================
+// ============================================================== */
+
+/* Style the navigation menu */
+#Equal-Width-Navbar-Links .navbar {
+  width: 90%;
+  background-color: #555;
+  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Navigation links */
+#Equal-Width-Navbar-Links .navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+margin: auto;
+}
+
+/* Add a background color on mouse-over */
+#Equal-Width-Navbar-Links .navbar a:hover {
+  background-color: #000;
+}
+
+/* Style the current/active link */
+#Equal-Width-Navbar-Links .navbar a.active {
+  background-color: #04AA6D;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  #Equal-Width-Navbar-Links .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+
+/* // ==============================================================
+// ==============================================================
+// ====================== Fixed Top Menu ========================
+// ==============================================================
+// ============================================================== */
+
+/* The navigation bar */
+#Fixed-Top-Menu .navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+}
+
+/* Links inside the navbar */
+#Fixed-Top-Menu .navbar a {
+  float: left;
+  display: block;
+  color: #fff3f3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+#Fixed-Top-Menu .navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */ 
+ #Fixed-Top-Menu .main {
+  margin-top: 30px; 
+  /* Add a top margin to avoid content overlay */
+}
+  /* Set the navbar to fixed position */
+  /* Position the navbar at the bottom of the page */
+  /* Full width */
+
+/* The navigation bar */
+/* #Fixed-Top-Menu .navbar { 
+  position: fixed; 
+  bottom: 0; 
+  width: 100%; 
+}   */
+
+   /* Add a bottom margin to avoid content overlay */
+/* Main content */
+/* #Fixed-Top-Menu .main {
+  margin-bottom: 30px; 
+ }  */
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+
+/* // ==============================================================
+// ==============================================================
+// ==============================================================
+// ==============================================================
+// ============================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
